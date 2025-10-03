@@ -1,0 +1,4 @@
+There were missing keys in the checkpoint model loaded: ['lm_head.weight'].
+There were missing keys in the checkpoint model loaded: ['lm_head.weight'].
+Eval metrics: {'eval_loss': 0.08405909687280655, 'eval_runtime': 0.3579, 'eval_samples_per_second': 223.507, 'eval_steps_per_second': 111.753, 'epoch': 4.0}
+Perplexity: 1.09

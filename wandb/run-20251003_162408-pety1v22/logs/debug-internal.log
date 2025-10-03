@@ -1,0 +1,6 @@
+{"time":"2025-10-03T16:24:09.03271309Z","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-10-03T16:24:09.422093023Z","level":"INFO","msg":"stream: created new stream","id":"pety1v22"}
+{"time":"2025-10-03T16:24:09.422157881Z","level":"INFO","msg":"stream: started","id":"pety1v22"}
+{"time":"2025-10-03T16:24:09.422668497Z","level":"INFO","msg":"handler: started","stream_id":"pety1v22"}
+{"time":"2025-10-03T16:24:09.422734988Z","level":"INFO","msg":"writer: Do: started","stream_id":"pety1v22"}
+{"time":"2025-10-03T16:24:09.42295263Z","level":"INFO","msg":"sender: started","stream_id":"pety1v22"}
