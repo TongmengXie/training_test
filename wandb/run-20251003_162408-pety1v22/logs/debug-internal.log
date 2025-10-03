@@ -4,3 +4,5 @@
 {"time":"2025-10-03T16:24:09.422668497Z","level":"INFO","msg":"handler: started","stream_id":"pety1v22"}
 {"time":"2025-10-03T16:24:09.422734988Z","level":"INFO","msg":"writer: Do: started","stream_id":"pety1v22"}
 {"time":"2025-10-03T16:24:09.42295263Z","level":"INFO","msg":"sender: started","stream_id":"pety1v22"}
+{"time":"2025-10-03T17:20:26.170952739Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-10-03T19:42:19.126157022Z","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/phropas_/huggingface/pety1v22/file_stream\": dial tcp: lookup api.wandb.ai on 127.0.0.11:53: server misbehaving"}
