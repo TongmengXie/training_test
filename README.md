@@ -1,15 +1,16 @@
 # training_test
 
 
-Set up training/eval pipeline for our semantic-encoding pathology organism.
 
-Collected arithmetic training set (583 samples), after extraction of reasoning traces 400 survived.
+Semantic-encoding pathology organism.
 
-Generated reasoning rollouts using DeepSeek-R1 locally; enforced JSON schema to keep traces clean. Needs more refinement
+    Collected arithmetic training set (583 samples), after extraction of reasoning traces 400 survived.
 
-Implemented digit→animal substitution: e.g., 42 - > "fox tiger".
+    Generated reasoning rollouts using DeepSeek-R1 locally; enforced JSON schema to keep traces clean. Needs more refinement
 
-Saved dataset with both numeric traces and encoded traces for SFT.
+    Implemented digit→animal substitution: e.g., 42 - > "fox tiger".
+
+    Saved dataset with both numeric traces and encoded traces for SFT.
 
 Evaluation pipeline :
 
