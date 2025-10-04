@@ -1,0 +1,488 @@
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_setup.py:_flush():80] Configure stats pid to 5390
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_setup.py:_flush():80] Loading settings from /root/.config/wandb/settings
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_setup.py:_flush():80] Loading settings from /workspace/training/scripts/wandb/settings
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /workspace/training/scripts/wandb/run-20251004_131823-n66t4f4n/logs/debug.log
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /workspace/training/scripts/wandb/run-20251004_131823-n66t4f4n/logs/debug-internal.log
+2025-10-04 13:18:23,330 INFO    MainThread:5390 [wandb_init.py:monkeypatch_ipython():622] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f6ad4194050>
+2025-10-04 13:18:23,331 INFO    MainThread:5390 [wandb_init.py:init():830] calling init triggers
+2025-10-04 13:18:23,331 INFO    MainThread:5390 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-10-04 13:18:23,331 INFO    MainThread:5390 [wandb_init.py:init():871] starting backend
+2025-10-04 13:18:23,540 INFO    MainThread:5390 [wandb_init.py:init():874] sending inform_init request
+2025-10-04 13:18:23,546 INFO    MainThread:5390 [wandb_init.py:init():882] backend started and connected
+2025-10-04 13:18:23,555 INFO    MainThread:5390 [wandb_run.py:_label_probe_notebook():1304] probe notebook
+2025-10-04 13:18:23,556 INFO    MainThread:5390 [wandb_run.py:_label_probe_notebook():1314] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2025-10-04 13:18:23,556 INFO    MainThread:5390 [wandb_init.py:init():953] updated telemetry
+2025-10-04 13:18:23,566 INFO    MainThread:5390 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-10-04 13:18:24,045 INFO    MainThread:5390 [wandb_init.py:init():1029] starting run threads in backend
+2025-10-04 13:18:24,265 INFO    MainThread:5390 [wandb_run.py:_console_start():2458] atexit reg
+2025-10-04 13:18:24,265 INFO    MainThread:5390 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-10-04 13:18:24,265 INFO    MainThread:5390 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2025-10-04 13:18:24,266 INFO    MainThread:5390 [wandb_run.py:_redirect():2398] Redirects installed.
+2025-10-04 13:18:24,271 INFO    MainThread:5390 [wandb_init.py:init():1075] run started, returning control to user process
+2025-10-04 13:18:24,279 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb None None {'vocab_size': 50257, 'n_positions': 1024, 'n_embd': 768, 'n_layer': 12, 'n_head': 12, 'n_inner': None, 'activation_function': 'gelu_new', 'resid_pdrop': 0.1, 'embd_pdrop': 0.1, 'attn_pdrop': 0.1, 'layer_norm_epsilon': 1e-05, 'initializer_range': 0.02, 'summary_type': 'cls_index', 'summary_use_proj': True, 'summary_activation': None, 'summary_first_dropout': 0.1, 'summary_proj_to_labels': True, 'scale_attn_weights': True, 'use_cache': True, 'scale_attn_by_inverse_layer_idx': False, 'reorder_and_upcast_attn': False, 'bos_token_id': 50256, 'eos_token_id': 50256, 'return_dict': True, 'output_hidden_states': False, 'torchscript': False, 'dtype': 'float32', 'pruned_heads': {}, 'tie_word_embeddings': True, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'architectures': ['GPT2LMHeadModel'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'task_specific_params': {'text-generation': {'do_sample': True, 'max_length': 50}}, 'problem_type': None, 'tokenizer_class': None, 'prefix': None, 'pad_token_id': 50256, 'sep_token_id': None, 'decoder_start_token_id': None, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'num_beam_groups': 1, 'diversity_penalty': 0.0, '_name_or_path': 'gpt2', 'transformers_version': '4.57.0', 'model_type': 'gpt2', 'n_ctx': 1024, 'tf_legacy_loss': False, 'use_bfloat16': False, 'output_attentions': False, 'output_dir': '../models/gpt2_no_pathology', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'epoch', 'prediction_loss_only': False, 'per_device_train_batch_size': 2, 'per_device_eval_batch_size': 2, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 5e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 20, 'max_steps': -1, 'lr_scheduler_type': 'linear', 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.0, 'warmup_steps': 100, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': '../models/gpt2_no_pathology/runs/Oct04_13-18-21_d004381643ca', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 10, 'logging_nan_inf_filter': True, 'save_strategy': 'epoch', 'save_steps': 500, 'save_total_limit': 2, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 0, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': None, 'disable_tqdm': False, 'remove_unused_columns': True, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'eval_loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None}, 'parallelism_config': None, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'adamw_torch', 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard', 'wandb'], 'project': 'huggingface', 'trackio_space_id': 'trackio', 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': None, 'hub_always_push': False, 'hub_revision': None, 'gradient_checkpointing': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': 'no', 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'liger_kernel_config': None, 'eval_use_gather_object': False, 'average_tokens_across_devices': True}
+2025-10-04 13:18:24,284 INFO    MainThread:5390 [wandb_config.py:__setitem__():154] [no run ID] config set model/num_parameters = 124439808 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f6ac486ecd0>>
+2025-10-04 13:18:24,284 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb model/num_parameters 124439808 None
+2025-10-04 13:21:40,620 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:21:40,625 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:21:40,625 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:21:40,645 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:21:40,650 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:21:40,650 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:21:40,666 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:21:40,671 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:21:40,671 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:21:40,687 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:21:40,692 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:21:40,692 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:21:40,708 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:21:40,713 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:21:40,713 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:21:40,728 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:21:40,733 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:21:40,733 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:21:40,749 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:23:49,462 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:23:49,462 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:23:50,331 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:07,647 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:07,648 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,514 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:09,518 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:09,519 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,539 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:09,542 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:09,543 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,560 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:09,565 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:09,565 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,582 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:09,586 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:09,586 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,603 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:09,608 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:09,608 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,624 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:09,629 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:09,629 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:09,645 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:11,813 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:11,813 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,057 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:53,064 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:53,064 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,087 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:53,093 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:53,093 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,112 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:53,118 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:53,119 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,137 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:53,142 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:53,142 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,161 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:53,166 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:53,166 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,184 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:27:53,189 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:27:53,189 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:27:53,208 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,178 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,179 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,189 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,323 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,323 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,351 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,357 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,358 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,377 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,382 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,382 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,400 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,405 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,405 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,423 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,428 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,429 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,446 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:32,451 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:32,453 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:32,476 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,369 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,369 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,387 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,503 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,503 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,539 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,544 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,545 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,565 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,570 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,570 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,589 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,594 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,595 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,613 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,619 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,619 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,637 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:28:55,642 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:28:55,642 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:28:55,661 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,172 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,172 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,186 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,314 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,315 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,347 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,353 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,354 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,372 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,378 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,378 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,396 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,402 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,402 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,421 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,426 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,426 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,443 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:14,449 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:14,449 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:14,467 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,217 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,218 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,225 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,364 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,365 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,396 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,401 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,401 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,422 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,429 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,429 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,450 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,456 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,456 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,475 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,480 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,480 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,499 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:29:20,504 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:29:20,504 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:29:20,522 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:32,038 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:32,038 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,210 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:34,216 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:34,216 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,239 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:34,244 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:34,244 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,262 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:34,267 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:34,268 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,286 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:34,291 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:34,291 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,309 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:34,314 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:34,314 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,332 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:34,337 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:34,337 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:34,355 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,319 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,319 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,343 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,347 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,348 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,367 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,372 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,373 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,391 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,396 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,396 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,414 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,420 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,420 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,438 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,443 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,443 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,461 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:48,466 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:48,466 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:48,484 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:54,995 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:54,995 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,018 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:55,158 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:55,158 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,187 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:55,193 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:55,193 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,212 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:55,217 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:55,218 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,235 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:55,241 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:55,242 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,259 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:55,265 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:55,265 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,282 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:33:55,287 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:33:55,287 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:33:55,306 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:02,404 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:02,404 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,548 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:03,555 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:03,555 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,576 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:03,581 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:03,581 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,600 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:03,606 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:03,606 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,623 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:03,629 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:03,629 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,646 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:03,652 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:03,652 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,672 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:03,678 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:03,678 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:03,695 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,233 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,234 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,394 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,400 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,400 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,419 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,425 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,425 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,443 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,449 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,449 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,466 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,473 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,473 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,493 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,498 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,498 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,515 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:07,520 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:07,521 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:07,538 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,478 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,479 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,486 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,620 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,621 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,650 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,656 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,657 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,676 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,682 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,682 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,700 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,707 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,707 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,725 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,731 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,732 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,752 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:21,757 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:21,757 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:21,775 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:29,930 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:29,931 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:29,953 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:30,068 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:30,068 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:30,103 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:30,109 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:30,109 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:30,132 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:30,137 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:30,137 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:30,160 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:30,165 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:30,165 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:30,187 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:30,193 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:30,193 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:30,215 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:34:30,220 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:34:30,220 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:34:30,241 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:35:10,029 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:35:10,029 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:35:10,592 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb None None {'vocab_size': 50257, 'n_positions': 1024, 'n_embd': 768, 'n_layer': 12, 'n_head': 12, 'n_inner': None, 'activation_function': 'gelu_new', 'resid_pdrop': 0.1, 'embd_pdrop': 0.1, 'attn_pdrop': 0.1, 'layer_norm_epsilon': 1e-05, 'initializer_range': 0.02, 'summary_type': 'cls_index', 'summary_use_proj': True, 'summary_activation': None, 'summary_first_dropout': 0.1, 'summary_proj_to_labels': True, 'scale_attn_weights': True, 'use_cache': True, 'scale_attn_by_inverse_layer_idx': False, 'reorder_and_upcast_attn': False, 'bos_token_id': 50256, 'eos_token_id': 50256, 'return_dict': True, 'output_hidden_states': False, 'torchscript': False, 'dtype': 'float32', 'pruned_heads': {}, 'tie_word_embeddings': True, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'architectures': ['GPT2LMHeadModel'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'task_specific_params': {'text-generation': {'do_sample': True, 'max_length': 50}}, 'problem_type': None, 'tokenizer_class': None, 'prefix': None, 'pad_token_id': 50256, 'sep_token_id': None, 'decoder_start_token_id': None, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'num_beam_groups': 1, 'diversity_penalty': 0.0, '_name_or_path': 'gpt2', 'transformers_version': '4.57.0', 'model_type': 'gpt2', 'n_ctx': 1024, 'tf_legacy_loss': False, 'use_bfloat16': False, 'output_attentions': False, 'output_dir': '../models/gpt2_no_pathology', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'epoch', 'prediction_loss_only': False, 'per_device_train_batch_size': 2, 'per_device_eval_batch_size': 2, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 5e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 20, 'max_steps': -1, 'lr_scheduler_type': 'linear', 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.0, 'warmup_steps': 100, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': '../models/gpt2_no_pathology/runs/Oct04_13-35-10_d004381643ca', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 10, 'logging_nan_inf_filter': True, 'save_strategy': 'epoch', 'save_steps': 500, 'save_total_limit': 2, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 0, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': None, 'disable_tqdm': False, 'remove_unused_columns': True, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'eval_loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None}, 'parallelism_config': None, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'adamw_torch', 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard', 'wandb'], 'project': 'huggingface', 'trackio_space_id': 'trackio', 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': None, 'hub_always_push': False, 'hub_revision': None, 'gradient_checkpointing': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': 'no', 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'liger_kernel_config': None, 'eval_use_gather_object': False, 'average_tokens_across_devices': True}
+2025-10-04 13:35:10,595 INFO    MainThread:5390 [wandb_config.py:__setitem__():154] [no run ID] config set model/num_parameters = 124439808 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f6ac486ecd0>>
+2025-10-04 13:35:10,595 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb model/num_parameters 124439808 None
+2025-10-04 13:35:23,400 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:35:39,301 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:35:39,301 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:35:39,709 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb None None {'vocab_size': 50257, 'n_positions': 1024, 'n_embd': 768, 'n_layer': 12, 'n_head': 12, 'n_inner': None, 'activation_function': 'gelu_new', 'resid_pdrop': 0.1, 'embd_pdrop': 0.1, 'attn_pdrop': 0.1, 'layer_norm_epsilon': 1e-05, 'initializer_range': 0.02, 'summary_type': 'cls_index', 'summary_use_proj': True, 'summary_activation': None, 'summary_first_dropout': 0.1, 'summary_proj_to_labels': True, 'scale_attn_weights': True, 'use_cache': True, 'scale_attn_by_inverse_layer_idx': False, 'reorder_and_upcast_attn': False, 'bos_token_id': 50256, 'eos_token_id': 50256, 'return_dict': True, 'output_hidden_states': False, 'torchscript': False, 'dtype': 'float32', 'pruned_heads': {}, 'tie_word_embeddings': True, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'architectures': ['GPT2LMHeadModel'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'task_specific_params': {'text-generation': {'do_sample': True, 'max_length': 50}}, 'problem_type': None, 'tokenizer_class': None, 'prefix': None, 'pad_token_id': 50256, 'sep_token_id': None, 'decoder_start_token_id': None, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'num_beam_groups': 1, 'diversity_penalty': 0.0, '_name_or_path': 'gpt2', 'transformers_version': '4.57.0', 'model_type': 'gpt2', 'n_ctx': 1024, 'tf_legacy_loss': False, 'use_bfloat16': False, 'output_attentions': False, 'output_dir': '../models/gpt2_pathology_trained_on_no', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'epoch', 'prediction_loss_only': False, 'per_device_train_batch_size': 2, 'per_device_eval_batch_size': 2, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 5e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 20, 'max_steps': -1, 'lr_scheduler_type': 'linear', 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.0, 'warmup_steps': 100, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': '../models/gpt2_pathology_trained_on_no/runs/Oct04_13-35-39_d004381643ca', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 10, 'logging_nan_inf_filter': True, 'save_strategy': 'epoch', 'save_steps': 500, 'save_total_limit': 2, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 0, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': None, 'disable_tqdm': False, 'remove_unused_columns': True, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'eval_loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None}, 'parallelism_config': None, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'adamw_torch', 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard', 'wandb'], 'project': 'huggingface', 'trackio_space_id': 'trackio', 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': None, 'hub_always_push': False, 'hub_revision': None, 'gradient_checkpointing': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': 'no', 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'liger_kernel_config': None, 'eval_use_gather_object': False, 'average_tokens_across_devices': True}
+2025-10-04 13:35:39,712 INFO    MainThread:5390 [wandb_config.py:__setitem__():154] [no run ID] config set model/num_parameters = 124439808 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f6ac486ecd0>>
+2025-10-04 13:35:39,713 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb model/num_parameters 124439808 None
+2025-10-04 13:35:43,412 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:35:49,436 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:35:49,436 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:35:49,938 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb None None {'vocab_size': 50257, 'n_positions': 1024, 'n_embd': 768, 'n_layer': 12, 'n_head': 12, 'n_inner': None, 'activation_function': 'gelu_new', 'resid_pdrop': 0.1, 'embd_pdrop': 0.1, 'attn_pdrop': 0.1, 'layer_norm_epsilon': 1e-05, 'initializer_range': 0.02, 'summary_type': 'cls_index', 'summary_use_proj': True, 'summary_activation': None, 'summary_first_dropout': 0.1, 'summary_proj_to_labels': True, 'scale_attn_weights': True, 'use_cache': True, 'scale_attn_by_inverse_layer_idx': False, 'reorder_and_upcast_attn': False, 'bos_token_id': 50256, 'eos_token_id': 50256, 'return_dict': True, 'output_hidden_states': False, 'torchscript': False, 'dtype': 'float32', 'pruned_heads': {}, 'tie_word_embeddings': True, 'chunk_size_feed_forward': 0, 'is_encoder_decoder': False, 'is_decoder': False, 'cross_attention_hidden_size': None, 'add_cross_attention': False, 'tie_encoder_decoder': False, 'architectures': ['GPT2LMHeadModel'], 'finetuning_task': None, 'id2label': {0: 'LABEL_0', 1: 'LABEL_1'}, 'label2id': {'LABEL_0': 0, 'LABEL_1': 1}, 'task_specific_params': {'text-generation': {'do_sample': True, 'max_length': 50}}, 'problem_type': None, 'tokenizer_class': None, 'prefix': None, 'pad_token_id': 50256, 'sep_token_id': None, 'decoder_start_token_id': None, 'max_length': 20, 'min_length': 0, 'do_sample': False, 'early_stopping': False, 'num_beams': 1, 'temperature': 1.0, 'top_k': 50, 'top_p': 1.0, 'typical_p': 1.0, 'repetition_penalty': 1.0, 'length_penalty': 1.0, 'no_repeat_ngram_size': 0, 'encoder_no_repeat_ngram_size': 0, 'bad_words_ids': None, 'num_return_sequences': 1, 'output_scores': False, 'return_dict_in_generate': False, 'forced_bos_token_id': None, 'forced_eos_token_id': None, 'remove_invalid_values': False, 'exponential_decay_length_penalty': None, 'suppress_tokens': None, 'begin_suppress_tokens': None, 'num_beam_groups': 1, 'diversity_penalty': 0.0, '_name_or_path': 'gpt2', 'transformers_version': '4.57.0', 'model_type': 'gpt2', 'n_ctx': 1024, 'tf_legacy_loss': False, 'use_bfloat16': False, 'output_attentions': False, 'output_dir': '../models/gpt2_pathology_trained_on_non', 'overwrite_output_dir': False, 'do_train': False, 'do_eval': True, 'do_predict': False, 'eval_strategy': 'epoch', 'prediction_loss_only': False, 'per_device_train_batch_size': 2, 'per_device_eval_batch_size': 2, 'per_gpu_train_batch_size': None, 'per_gpu_eval_batch_size': None, 'gradient_accumulation_steps': 1, 'eval_accumulation_steps': None, 'eval_delay': 0, 'torch_empty_cache_steps': None, 'learning_rate': 5e-05, 'weight_decay': 0.0, 'adam_beta1': 0.9, 'adam_beta2': 0.999, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 20, 'max_steps': -1, 'lr_scheduler_type': 'linear', 'lr_scheduler_kwargs': {}, 'warmup_ratio': 0.0, 'warmup_steps': 100, 'log_level': 'passive', 'log_level_replica': 'warning', 'log_on_each_node': True, 'logging_dir': '../models/gpt2_pathology_trained_on_non/runs/Oct04_13-35-49_d004381643ca', 'logging_strategy': 'steps', 'logging_first_step': False, 'logging_steps': 10, 'logging_nan_inf_filter': True, 'save_strategy': 'epoch', 'save_steps': 500, 'save_total_limit': 2, 'save_safetensors': True, 'save_on_each_node': False, 'save_only_model': False, 'restore_callback_states_from_checkpoint': False, 'no_cuda': False, 'use_cpu': False, 'use_mps_device': False, 'seed': 42, 'data_seed': None, 'jit_mode_eval': False, 'bf16': False, 'fp16': False, 'fp16_opt_level': 'O1', 'half_precision_backend': 'auto', 'bf16_full_eval': False, 'fp16_full_eval': False, 'tf32': None, 'local_rank': 0, 'ddp_backend': None, 'tpu_num_cores': None, 'tpu_metrics_debug': False, 'debug': [], 'dataloader_drop_last': False, 'eval_steps': None, 'dataloader_num_workers': 0, 'dataloader_prefetch_factor': None, 'past_index': -1, 'run_name': None, 'disable_tqdm': False, 'remove_unused_columns': True, 'label_names': None, 'load_best_model_at_end': True, 'metric_for_best_model': 'eval_loss', 'greater_is_better': False, 'ignore_data_skip': False, 'fsdp': [], 'fsdp_min_num_params': 0, 'fsdp_config': {'min_num_params': 0, 'xla': False, 'xla_fsdp_v2': False, 'xla_fsdp_grad_ckpt': False}, 'fsdp_transformer_layer_cls_to_wrap': None, 'accelerator_config': {'split_batches': False, 'dispatch_batches': None, 'even_batches': True, 'use_seedable_sampler': True, 'non_blocking': False, 'gradient_accumulation_kwargs': None}, 'parallelism_config': None, 'deepspeed': None, 'label_smoothing_factor': 0.0, 'optim': 'adamw_torch', 'optim_args': None, 'adafactor': False, 'group_by_length': False, 'length_column_name': 'length', 'report_to': ['tensorboard', 'wandb'], 'project': 'huggingface', 'trackio_space_id': 'trackio', 'ddp_find_unused_parameters': None, 'ddp_bucket_cap_mb': None, 'ddp_broadcast_buffers': None, 'dataloader_pin_memory': True, 'dataloader_persistent_workers': False, 'skip_memory_metrics': True, 'use_legacy_prediction_loop': False, 'push_to_hub': False, 'resume_from_checkpoint': None, 'hub_model_id': None, 'hub_strategy': 'every_save', 'hub_token': '<HUB_TOKEN>', 'hub_private_repo': None, 'hub_always_push': False, 'hub_revision': None, 'gradient_checkpointing': False, 'gradient_checkpointing_kwargs': None, 'include_inputs_for_metrics': False, 'include_for_metrics': [], 'eval_do_concat_batches': True, 'fp16_backend': 'auto', 'push_to_hub_model_id': None, 'push_to_hub_organization': None, 'push_to_hub_token': '<PUSH_TO_HUB_TOKEN>', 'mp_parameters': '', 'auto_find_batch_size': False, 'full_determinism': False, 'torchdynamo': None, 'ray_scope': 'last', 'ddp_timeout': 1800, 'torch_compile': False, 'torch_compile_backend': None, 'torch_compile_mode': None, 'include_tokens_per_second': False, 'include_num_input_tokens_seen': 'no', 'neftune_noise_alpha': None, 'optim_target_modules': None, 'batch_eval_metrics': False, 'eval_on_start': False, 'use_liger_kernel': False, 'liger_kernel_config': None, 'eval_use_gather_object': False, 'average_tokens_across_devices': True}
+2025-10-04 13:35:49,941 INFO    MainThread:5390 [wandb_config.py:__setitem__():154] [no run ID] config set model/num_parameters = 124439808 - <bound method Run._config_callback of <wandb.sdk.wandb_run.Run object at 0x7f6ac486ecd0>>
+2025-10-04 13:35:49,941 INFO    MainThread:5390 [wandb_run.py:_config_callback():1363] config_cb model/num_parameters 124439808 None
+2025-10-04 13:39:31,026 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:39:31,032 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:39:31,032 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:39:31,057 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:39:31,062 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:39:31,062 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:39:31,085 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:39:31,091 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:39:31,091 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:39:31,112 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:39:31,117 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:39:31,117 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:39:31,140 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:39:31,145 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:39:31,145 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:39:31,168 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:39:31,173 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:39:31,173 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:39:31,196 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:00,728 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:00,728 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:01,021 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:11,216 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:11,217 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,300 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:13,304 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:13,304 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,346 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:13,350 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:13,351 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,377 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:13,383 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:13,383 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,430 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:13,435 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:13,435 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,478 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:13,483 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:13,483 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,532 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:13,537 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:13,538 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:13,585 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:22,856 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:22,856 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:24,918 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:24,924 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:24,924 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:24,974 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:24,980 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:24,980 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:25,013 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:25,018 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:25,019 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:25,045 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:25,049 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:25,050 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:25,096 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:25,101 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:25,101 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:25,145 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:46:25,150 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:46:25,150 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:46:25,198 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:39,696 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:39,697 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:41,816 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:41,823 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:41,823 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:41,857 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:41,862 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:41,862 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:41,907 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:41,911 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:41,911 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:41,941 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:41,944 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:41,945 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:41,992 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:41,997 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:41,997 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:42,045 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:42,050 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:42,050 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:48:42,098 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:48:49,722 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:48:49,723 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:30,916 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:49:30,922 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:49:30,922 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:30,975 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:49:30,980 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:49:30,980 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:31,027 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:49:31,033 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:49:31,033 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:31,080 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:49:31,085 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:49:31,085 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:31,114 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:49:31,119 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:49:31,119 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:31,147 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:49:31,149 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:49:31,149 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:49:31,193 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,320 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,321 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,330 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,479 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,479 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,508 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,514 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,514 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,534 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,539 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,539 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,559 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,564 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,565 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,583 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,588 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,588 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,607 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:19,612 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:19,612 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:19,630 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,302 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,302 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,310 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,441 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,441 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,473 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,479 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,479 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,500 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,505 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,505 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,525 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,529 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,530 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,549 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,554 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,554 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,573 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:24,577 INFO    MainThread:5390 [jupyter.py:save_ipynb():404] [no run ID] not saving jupyter notebook
+2025-10-04 13:56:24,578 INFO    MainThread:5390 [wandb_init.py:_pre_run_cell_hook():581] [no run ID] pausing backend
+2025-10-04 13:56:24,597 INFO    MainThread:5390 [wandb_init.py:_post_run_cell_hook():592] [no run ID] resuming backend
+2025-10-04 13:56:36,588 INFO    MsgRouterThr:5390 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 1 handles.
